@@ -1,0 +1,34 @@
+{
+    // tsc編譯器可以根據訊息來對代碼進行編譯
+    "include": [
+        "./src/**/*"
+    ],
+    // 不需要被編譯的文件目錄
+    "exclude": [
+        "./src/hello/**/*"
+    ],
+    "compilerOptions": {
+    // 用來指定ts被編譯的ES版本
+    "target": "es2015",
+    // module指定要使用的模塊規範
+    "module": "es2015",
+    // 指定項目中要使用的庫
+    "lib": ["es6", "dom"],
+    // outDir 用來指定編譯後文件所在的目錄
+    "outDir": "./dist",
+    // 是否對js文件進行編譯，預設是false
+    "allowJs": false,
+    // 是否移除
+    "removeComments": true,
+    // 不生成編譯後的文件
+    "noEmit": true,
+    // 當有錯誤時不生成編譯後的文件
+    "noEmitOnError": true,
+    // 用來設置編譯後的文件是否使用嚴格模式，默認是false
+    "alwaysStrict": false,
+    // 不允許不明確類型的this
+    "noImplicitThis": true,
+    // 嚴格的檢查空值
+    "strictNullChecks": true
+    }
+}
